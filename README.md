@@ -144,10 +144,10 @@ customer-shopping-behavior-analysis/
 │
 ├── Data/
 ├── Python/
-├── Sql/
+├── SQL/
 ├── Power BI Dashboard/
 ├── Screenshots/
-├── Reports/
+├── Final Report and Client Presentation/
 └── README.md
 ```
 
@@ -156,7 +156,7 @@ customer-shopping-behavior-analysis/
 ## ▶️ How to Run
 
 ```bash
-git clone https://github.com/your-username/customer-shopping-behavior-analysis.git
+git clone https://github.com/tushar1112/Customer_behavior_analysis.git
 cd customer-shopping-behavior-analysis
 ```
 
