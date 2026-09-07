@@ -51,7 +51,7 @@ The dataset contains **3,900 rows, 18 columns, and 37 missing Review Rating valu
 
 ## 💻 Code Highlights
 
-A few snippets that show the reasoning behind the cleaning and analysis — full code lives in [`notebooks/`](notebooks/) and [`sql/business_queries.sql`](sql/business_queries.sql).
+A few snippets that show the reasoning behind the cleaning and analysis — full code lives in [`customer_shopping_behavior.ipynb`](Python/customer_shopping_behavior.ipynb) and [`customer.sql`](SQL/customer.sql).
 
 **Python — imputing missing ratings using category context, not a global average**
 ```python
