@@ -86,7 +86,8 @@ Use highly rated and best-selling products as anchors for marketing campaigns.
 * Shipping preferences
 * Demographic analysis
 
-> 📷 *Add your Power BI dashboard screenshot here*
+> <img width="1337" height="722" alt="image" src="https://github.com/user-attachments/assets/1469cc0e-d29f-4498-a322-67fec8a72628" />
+
 
 ---
 
