@@ -49,6 +49,47 @@ The dataset contains **3,900 rows, 18 columns, and 37 missing Review Rating valu
 
 ---
 
+## 💻 Code Highlights
+
+A few snippets that show the reasoning behind the cleaning and analysis — full code lives in [`notebooks/`](notebooks/) and [`sql/business_queries.sql`](sql/business_queries.sql).
+
+**Python — imputing missing ratings using category context, not a global average**
+```python
+# Filling missing Review Rating using the median rating within each product category,
+# rather than a single global median, so imputed values stay realistic per category.
+df['review_rating'] = df.groupby('category')['review_rating'].transform(
+    lambda x: x.fillna(x.median())
+)
+```
+
+**Python — catching redundant columns before they double-count in analysis**
+```python
+# Checking whether 'promo_code_used' and 'discount_applied' carry the same information
+(df['promo_code_used'] == df['discount_applied']).all()   # → True
+
+# Confirmed fully redundant — dropped to avoid double-counting the same signal in SQL/BI
+df = df.drop('promo_code_used', axis=1)
+```
+
+**SQL — segmenting customers by purchase history (New / Returning / Loyal)**
+<p align="center">
+  <img src="Screenshots/seg.png" style="width: 45%; height: 250px; object-fit: cover;">
+  &nbsp; &nbsp;
+  <img src="Screenshots/seg_out.png" style="width: 45%; height: 250px; object-fit: cover;">
+</p>
+<p align="center"><i>SQL query (left) and result output (right)</i></p>
+
+
+**SQL — top 3 products per category using a window function**
+<p align="center">
+  <img src="Screenshots/top3_ss.png" style="width: 45%; height: 250px; object-fit: cover;">
+  &nbsp; &nbsp;
+  <img src="Screenshots/top_out.png" style="width: 45%; height: 250px; object-fit: cover;">
+</p>
+<p align="center"><i>SQL query (left) and result output (right)</i></p>
+
+---
+
 ## 🎯 Key Business Recommendations
 
 Each recommendation is tied directly to a data finding, with the business logic and expected impact made explicit — not just "what to do" but "why it matters."
@@ -101,12 +142,12 @@ Each recommendation is tied directly to a data finding, with the business logic 
 ```text
 customer-shopping-behavior-analysis/
 │
-├── data/
-├── python/
-├── sql/
-├── powerbi/
-├── report/
-├── presentation/
+├── Data/
+├── Python/
+├── Sql/
+├── Power BI Dashboard/
+├── Screenshots/
+├── Reports/
 └── README.md
 ```
 
