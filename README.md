@@ -37,40 +37,46 @@ The dataset contains **3,900 rows, 18 columns, and 37 missing Review Rating valu
 
 ## 📊 Key Business Insights
 
-| Finding                                  | Business Impact                                                 |
-| ---------------------------------------- | --------------------------------------------------------------- |
-| **Subscribers show 68% higher spend**    | Strong opportunity to increase subscription adoption            |
-| **Express customers spend ~$65 vs ~$58** | Higher-value customers can be targeted with premium fulfillment |
-| **50% customers are New**                | Significant opportunity to improve customer retention           |
-| **15% are Loyal customers**              | Loyalty programs can increase repeat purchasing                 |
-| **High-value discount users identified** | Enables targeted promotions without broadly discounting         |
-| **Top-rated products identified**        | Can be prioritized in marketing campaigns                       |
+| Finding | Why It Matters | Business Impact |
+|---|---|---|
+| **Subscribers spend 68% more on average than non-subscribers** | Subscription status is the single strongest spend predictor in the dataset | Growing the subscriber base is the highest-leverage revenue lever available |
+| **Express-shipping customers spend ~$65 vs. ~$58 for Standard (~12% premium)** | Shipping choice doubles as a low-cost value signal, no new data needed | Target Express customers with premium offers to capture already-demonstrated willingness to pay |
+| **50% of customers are New, only 15% are Loyal** | The funnel is acquisition-heavy and retention-light | Biggest opportunity is converting first-time buyers into repeat customers, not acquiring more new ones |
+| **High-value customers identified who spend above-average even with discounts applied** | Discounts aren't the only thing driving their spend | Targeted (not blanket) discounting can protect margin while still retaining these customers |
+| **Top-rated, best-selling products identified across categories** | Clear signal of proven demand and satisfaction | Concentrating marketing spend on these products improves campaign ROI over even distribution |
 
-The analysis found **New / Returning / Loyal customers at 50% / 35% / 15%**, respectively.
+**Customer segmentation:** New / Returning / Loyal customers split **50% / 35% / 15%**, respectively — confirming the retention gap above.
 
 ---
 
 ## 🎯 Key Business Recommendations
 
+Each recommendation is tied directly to a data finding, with the business logic and expected impact made explicit — not just "what to do" but "why it matters."
+
 ### 1. Increase Subscription Adoption
+**Data signal:** Subscribers spend 68% more on average than non-subscribers.
+**Action:** Convert high-frequency, high-spend non-subscribers into subscribers using targeted offers (free trial period, first-purchase discount tied to sign-up) rather than broad, undifferentiated promotions.
+**Expected impact:** Since subscribers already spend materially more, even a modest lift in subscription rate compounds into disproportionate revenue growth — this is the single highest-leverage lever in the dataset.
 
-Use exclusive benefits and targeted offers to convert high-value customers into subscribers.
-
-### 2. Improve Customer Retention
-
-Focus on moving customers from **New → Returning → Loyal** through loyalty rewards and personalized engagement.
+### 2. Improve Customer Retention (New → Returning → Loyal)
+**Data signal:** 50% of the customer base is New, only 15% is Loyal — most customers are not converting past a first purchase.
+**Action:** Introduce a structured post-purchase engagement flow (follow-up offers, loyalty points on 2nd/3rd purchase, personalized re-engagement emails) specifically targeted at the New segment in the 30–60 day window after first purchase.
+**Expected impact:** Moving even a fraction of the New segment into Returning has outsized effect given it's the largest segment by volume — this is a retention/funnel problem, not an acquisition problem.
 
 ### 3. Optimize Discount Strategy
+**Data signal:** High-value customers were identified who spend above-average even while using discounts — meaning discounts aren't the only thing driving their spend.
+**Action:** Shift from broad, category-wide discounting toward targeted promotions for these already-high-value customers, and reserve discount-dependent products (see appendix) for more selective, margin-aware promotions.
+**Expected impact:** Reduces blanket margin erosion while still protecting the customers most worth retaining — a more profitable discount strategy, not just a smaller one.
 
-Target discounts toward high-value customers instead of applying broad promotions.
-
-### 4. Leverage Premium Customer Behavior
-
-Express-shipping customers show higher average spending, creating an opportunity for targeted premium offers.
+### 4. Leverage Premium Customer Behavior (Shipping as a Signal)
+**Data signal:** Express-shipping customers spend ~$65 on average vs. ~$58 for Standard — roughly a 12% premium.
+**Action:** Treat shipping preference as a segmentation signal, not just a fulfillment choice — target Express customers with premium/early-access offers, since they've already shown willingness to pay for convenience.
+**Expected impact:** A low-cost way to identify higher-value customers without needing new data collection — the signal already exists in checkout behavior.
 
 ### 5. Promote High-Performing Products
-
-Use highly rated and best-selling products as anchors for marketing campaigns.
+**Data signal:** A clear set of top-rated, best-selling products stands out across categories.
+**Action:** Anchor marketing campaigns and homepage/email placements around these products rather than spreading promotional spend evenly across the catalog.
+**Expected impact:** Concentrates marketing spend behind products with proven demand and satisfaction, improving campaign ROI over undifferentiated promotion.
 
 ---
 
@@ -86,8 +92,7 @@ Use highly rated and best-selling products as anchors for marketing campaigns.
 * Shipping preferences
 * Demographic analysis
 
-> <img width="1337" height="722" alt="image" src="https://github.com/user-attachments/assets/1469cc0e-d29f-4498-a322-67fec8a72628" />
-
+> ![Dashboard](https://github.com/user-attachments/assets/1469cc0e-d29f-4498-a322-67fec8a72628)
 
 ---
 
