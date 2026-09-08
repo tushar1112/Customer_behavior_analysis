@@ -1,4 +1,4 @@
-# 🛍️ Customer Shopping Behavior Analysis
+# 🛍️ Customer Shopping Behavior Analysis 
 
 **End-to-end retail analytics project** analyzing **3,900 customer transactions** to identify revenue drivers, customer segments, and opportunities to improve **retention, subscriptions, and marketing strategy**.
 
