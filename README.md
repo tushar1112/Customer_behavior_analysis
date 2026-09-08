@@ -133,7 +133,7 @@ Each recommendation is tied directly to a data finding, with the business logic 
 * Shipping preferences
 * Demographic analysis
 
-> ![Dashboard](https://github.com/user-attachments/assets/1469cc0e-d29f-4498-a322-67fec8a72628)
+> ![Dashboard](Screenshots/Dashboard_screenshot.png)
 
 ---
 
